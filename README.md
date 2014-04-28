@@ -35,6 +35,12 @@ assert.deepEqual(messages, {
 	}
 });
 ```
+
+Alternatively, install it as a global module, and then run:
+```bash
+deprecations forms object.assign
+```
+which will print out the same output, as valid JSON.
 ## Tests
 Simply clone the repo, `npm install`, and run `npm test`
 

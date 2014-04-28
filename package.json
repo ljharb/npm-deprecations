@@ -10,6 +10,10 @@
 		"coverage": "covert test/*.js",
 		"coverage-quiet": "covert test/*.js --quiet"
 	},
+	"preferGlobal": true,
+	"bin": {
+		"deprecations": "bin.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/ljharb/npm-deprecations.git"

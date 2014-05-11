@@ -27,7 +27,9 @@ test('works', function (t) {
 		'0.2.3': 'Please update to the latest version',
 		'0.3.0': 'Please update to the latest version',
 		'0.4.0': 'Please update to the latest version',
-		'0.4.1': undefined
+		'0.4.1': undefined,
+		'0.5.0': undefined,
+		'0.6.0': undefined
 	};
 
 	t.test('with one module', function (st) {

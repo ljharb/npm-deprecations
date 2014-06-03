@@ -40,7 +40,7 @@ test('works', function (t) {
 			st.deepEqual(messages, {
 				forms: formMessages
 			});
-		});
+		}).done();
 	});
 
 	t.test('with multiple modules', function (st) {
@@ -57,7 +57,7 @@ test('works', function (t) {
 					'0.3.1': undefined
 				}
 			});
-		});
+		}).done();
 	});
 });
 

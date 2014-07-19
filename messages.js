@@ -6,7 +6,7 @@ var npm = require('npm');
 module.exports = function getDeprecationMessages(name, versions) {
 	var promises = versions.map(function (version) {
 		return new Promise(function (resolve, reject) {
-			npm.load({}, function (err, npm) {
+			npm.load({ spin: false }, function (err, npm) {
 				if (err) { throw err; }
 				npm.commands.view([name + '@' + version, 'deprecated'], true, function (err, data) {
 					if (err) { throw err; }

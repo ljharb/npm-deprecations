@@ -5,7 +5,7 @@ var npm = require('npm');
 
 module.exports = function getVersions(module) {
 	return new Promise(function (resolve, reject) {
-		npm.load({}, function (err, npm) {
+		npm.load({ spin: false }, function (err, npm) {
 			if (err) { throw err; }
 			npm.commands.view([module, 'versions'], true, function (err, info) {
 				if (err) { throw err; }

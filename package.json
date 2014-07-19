@@ -26,7 +26,7 @@
 	],
 	"dependencies": {
 		"npm": "*",
-		"object.assign": "~0.3.1",
+		"object.assign": "~0.4.1",
 		"promiseback": "~0.3.0"
 	},
 	"devDependencies": {

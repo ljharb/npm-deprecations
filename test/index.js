@@ -54,7 +54,9 @@ test('works', function (t) {
 					'0.1.1': 'Please upgrade to the latest spec-compliant version',
 					'0.2.0': 'Please upgrade to the latest spec-compliant version',
 					'0.2.1': 'Please upgrade to the latest spec-compliant version',
-					'0.3.1': undefined
+					'0.3.1': 'Object.assign should accept any value except null and undefined, and should coerce to an object',
+					'0.4.0': 'Please update to the latest version',
+					'0.4.1': undefined
 				}
 			});
 		}).done();

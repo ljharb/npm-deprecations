@@ -16,21 +16,24 @@ test('errors', function (t) {
 
 test('works', function (t) {
 	var formMessages = {
-		'0.1.0': 'Please update to the latest version',
-		'0.1.1': 'Please update to the latest version',
-		'0.1.2': 'Please update to the latest version',
-		'0.1.3': 'Please update to the latest version',
-		'0.1.4': 'Please update to the latest version',
-		'0.2.0': 'Please update to the latest version',
-		'0.2.1': 'Please update to the latest version',
-		'0.2.2': 'Please update to the latest version',
-		'0.2.3': 'Please update to the latest version',
-		'0.3.0': 'Please update to the latest version',
-		'0.4.0': 'Please update to the latest version',
-		'0.4.1': 'Please update to the latest version',
-		'0.5.0': 'Please update to the latest version',
-		'0.6.0': 'Please update to the latest version',
-		'0.7.0': undefined
+		'0.1.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.1.1': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.1.2': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.1.3': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.1.4': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.2.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.2.1': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.2.2': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.2.3': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.3.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.4.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.4.1': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.5.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.6.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.7.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.8.1': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.9.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.9.1': undefined
 	};
 
 	t.test('with one module', function (st) {

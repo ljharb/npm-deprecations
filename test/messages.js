@@ -17,9 +17,9 @@ test('returns a promise', function (t) {
 test('gets deprecation messages', function (t) {
 	var promise = messages(name, versions);
 	var expected = [
-		{ '0.1.0': 'Please update to the latest version' },
-		{ '0.2.0': 'Please update to the latest version' },
-		{ '0.3.0': 'Please update to the latest version' }
+		{ '0.1.0': 'Please update to the latest version to ensure the latest security fixes in "qs"' },
+		{ '0.2.0': 'Please update to the latest version to ensure the latest security fixes in "qs"' },
+		{ '0.3.0': 'Please update to the latest version to ensure the latest security fixes in "qs"' }
 	];
 	t.plan(1);
 	promise.then(function (messages) {

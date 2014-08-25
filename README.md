@@ -46,11 +46,11 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/deprecations
 [2]: http://vb.teelaun.ch/ljharb/npm-deprecations.svg
-[3]: https://travis-ci.org/ljharb/npm-deprecations.png
+[3]: https://travis-ci.org/ljharb/npm-deprecations.svg
 [4]: https://travis-ci.org/ljharb/npm-deprecations
-[5]: https://david-dm.org/ljharb/npm-deprecations.png
+[5]: https://david-dm.org/ljharb/npm-deprecations.svg
 [6]: https://david-dm.org/ljharb/npm-deprecations
-[7]: https://david-dm.org/ljharb/npm-deprecations/dev-status.png
+[7]: https://david-dm.org/ljharb/npm-deprecations/dev-status.svg
 [8]: https://david-dm.org/ljharb/npm-deprecations#info=devDependencies
 [9]: https://nodei.co/npm/deprecations.png?downloads=true&stars=true
 

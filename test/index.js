@@ -33,7 +33,9 @@ test('works', function (t) {
 		'0.7.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
 		'0.8.1': 'Please update to the latest version to ensure the latest security fixes in "qs"',
 		'0.9.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
-		'0.9.1': undefined
+		'0.9.1': undefined,
+		'0.9.2': undefined,
+		'0.9.3': undefined
 	};
 
 	t.test('with one module', function (st) {
@@ -62,7 +64,8 @@ test('works', function (t) {
 					'0.4.2': 'v0.4.3 doesn\'t modify function arguments, since it deoptimizes v8',
 					'0.4.3': undefined,
 					'0.5.0': undefined,
-					'1.0.0': undefined
+					'1.0.0': undefined,
+					'1.0.1': undefined
 				}
 			});
 		}).done();

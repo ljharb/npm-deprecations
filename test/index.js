@@ -37,7 +37,8 @@ test('works', function (t) {
 		'0.9.2': undefined,
 		'0.9.3': undefined,
 		'0.9.4': undefined,
-		'0.9.5': undefined
+		'0.9.5': undefined,
+		'0.9.6': undefined
 	};
 
 	t.test('with one module', function (st) {

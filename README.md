@@ -1,6 +1,10 @@
 #deprecations <sup>[![Version Badge][2]][1]</sup>
 
-[![Build Status][3]][4] [![dependency status][5]][6] [![dev dependency status][7]][8]
+[![Build Status][3]][4]
+[![dependency status][5]][6]
+[![dev dependency status][7]][8]
+[![License][license-image]][license-url]
+[![Downloads][downloads-image]][downloads-url]
 
 [![npm badge][9]][1]
 
@@ -53,4 +57,8 @@ Simply clone the repo, `npm install`, and run `npm test`
 [7]: https://david-dm.org/ljharb/npm-deprecations/dev-status.svg
 [8]: https://david-dm.org/ljharb/npm-deprecations#info=devDependencies
 [9]: https://nodei.co/npm/deprecations.png?downloads=true&stars=true
+[license-image]: http://img.shields.io/npm/l/deprecations.svg
+[license-url]: LICENSE
+[downloads-image]: http://img.shields.io/npm/dm/deprecations.svg
+[downloads-url]: http://npm-stat.com/charts.html?package=deprecations
 

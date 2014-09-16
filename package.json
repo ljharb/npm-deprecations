@@ -28,7 +28,7 @@
 	"dependencies": {
 		"npm": "*",
 		"object.assign": "~1.0.1",
-		"promiseback": "~1.0.2"
+		"promiseback": "~2.0.0"
 	},
 	"devDependencies": {
 		"tape": "~2.14.0",

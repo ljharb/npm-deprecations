@@ -1,4 +1,4 @@
-#deprecations <sup>[![Version Badge][2]][1]</sup>
+#deprecations <sup>[![Version Badge][2]][npm-url]</sup>
 
 [![Build Status][3]][4]
 [![dependency status][5]][6]
@@ -6,7 +6,7 @@
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
-[![npm badge][9]][1]
+[![npm badge][9]][npm-url]
 
 Given an npm module name, get a map of npm version numbers to deprecation messages.
 
@@ -48,7 +48,7 @@ which will print out the same output, as valid JSON.
 ## Tests
 Simply clone the repo, `npm install`, and run `npm test`
 
-[1]: https://npmjs.org/package/deprecations
+[npm-url]: https://npmjs.org/package/deprecations
 [2]: http://vb.teelaun.ch/ljharb/npm-deprecations.svg
 [3]: https://travis-ci.org/ljharb/npm-deprecations.svg
 [4]: https://travis-ci.org/ljharb/npm-deprecations

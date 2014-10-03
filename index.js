@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var toStr = Object.prototype.toString;
 var slice = Array.prototype.slice;

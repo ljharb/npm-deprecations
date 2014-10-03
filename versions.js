@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var Promise = require('promiseback').Deferred.Promise;
 var npm = require('npm');

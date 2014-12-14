@@ -70,7 +70,10 @@ test('works', function (t) {
 					'0.4.3': undefined,
 					'0.5.0': undefined,
 					'1.0.0': undefined,
-					'1.0.1': undefined
+					'1.0.1': undefined,
+					'1.0.2': undefined,
+					'1.0.3': undefined,
+					'1.1.1': undefined
 				}
 			});
 		}).done();

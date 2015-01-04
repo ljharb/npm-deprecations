@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-var deprecations = require('deprecations');
+var deprecations = require('./');
 
 var modules = process.argv.slice(2);
 

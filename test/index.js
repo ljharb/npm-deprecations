@@ -41,7 +41,8 @@ test('works', function (t) {
 		'0.9.6': undefined,
 		'0.10.0': undefined,
 		'1.0.0': undefined,
-		'1.1.0': undefined
+		'1.1.0': undefined,
+		'1.1.1': undefined
 	};
 
 	t.test('with one module', function (st) {

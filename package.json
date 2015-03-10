@@ -26,14 +26,14 @@
 		"deprecation messages"
 	],
 	"dependencies": {
-		"npm": "*",
-		"object.assign": "~1.1.1",
-		"promiseback": "~2.0.1"
+		"npm": "^2.7.0",
+		"object.assign": "^1.1.1",
+		"promiseback": "^2.0.1"
 	},
 	"devDependencies": {
-		"tape": "~3.5.0",
-		"covert": "1.0.0",
-		"jscs": "~1.11.0"
+		"tape": "^3.5.0",
+		"covert": "^1.0.1",
+		"jscs": "^1.11.3"
 	},
 	"engines": {
 		"node": ">= 0.4"

@@ -79,7 +79,9 @@ test('works', function (t) {
 					'2.0.0': undefined,
 					'2.0.1': undefined,
 					'2.0.2': undefined,
-					'3.0.0': undefined
+					'2.0.3': undefined,
+					'3.0.0': undefined,
+					'3.0.1': undefined
 				}
 			});
 		}).done();

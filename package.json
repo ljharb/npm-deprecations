@@ -9,7 +9,9 @@
 		"test": "npm run lint && node test/index.js && npm run security",
 		"coverage": "covert test/*.js",
 		"coverage-quiet": "covert test/*.js --quiet",
-		"lint": "jscs *.js test/*.js",
+		"lint": "npm run jscs && npm run eslint",
+		"eslint": "eslint *.js test/*.js",
+		"jscs": "jscs *.js test/*.js",
 		"security": "nsp package"
 	},
 	"preferGlobal": true,
@@ -35,6 +37,8 @@
 		"tape": "^4.0.1",
 		"covert": "^1.1.0",
 		"jscs": "^2.0.0",
+		"eslint": "^1.0.0",
+		"@ljharb/eslint-config": "^1.0.4",
 		"nsp": "^1.0.3"
 	},
 	"engines": {

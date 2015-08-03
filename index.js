@@ -12,10 +12,10 @@ var assign = require('object.assign');
 var getVersions = require('./versions');
 var getDeprecationMessages = require('./messages');
 
-module.exports = function deprecations(name) {
+module.exports = function deprecations(packageName) {
 	var callback;
 	if (arguments.length < 1) {
-		throw new TypeError('at least 1 module name is required');
+		throw new TypeError('at least 1 package name is required');
 	} else if (arguments.length > 1 && isFunction(arguments[arguments.length - 1])) {
 		callback = arguments[arguments.length - 1];
 	}

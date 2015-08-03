@@ -87,5 +87,3 @@ test('works', function (t) {
 		}).done();
 	});
 });
-
-

@@ -49,7 +49,7 @@ which will print out the same output, as valid JSON.
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/deprecations
-[npm-version-svg]: http://vb.teelaun.ch/ljharb/npm-deprecations.svg
+[npm-version-svg]: http://versionbadg.es/ljharb/npm-deprecations.svg
 [travis-svg]: https://travis-ci.org/ljharb/npm-deprecations.svg
 [travis-url]: https://travis-ci.org/ljharb/npm-deprecations
 [deps-svg]: https://david-dm.org/ljharb/npm-deprecations.svg

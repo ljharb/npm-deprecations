@@ -29,8 +29,8 @@
 		"deprecation messages"
 	],
 	"dependencies": {
-		"npm": "3.x-latest",
-		"object.assign": "^3.0.1",
+		"npm": "latest",
+		"object.assign": "^4.0.1",
 		"promiseback": "^2.0.1"
 	},
 	"devDependencies": {

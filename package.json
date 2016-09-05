@@ -30,8 +30,8 @@
 	],
 	"dependencies": {
 		"npm": "3.3.x",
-		"object.assign": "^4.0.1",
-		"promiseback": "^2.0.1"
+		"object.assign": "^4.0.4",
+		"promiseback": "^2.0.2"
 	},
 	"devDependencies": {
 		"tape": "^4.2.0",

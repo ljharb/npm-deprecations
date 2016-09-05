@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+  - "6.5"
   - "6.4"
   - "6.3"
   - "6.2"
@@ -66,6 +67,7 @@ matrix:
     - node_js: "node"
       env: LINT=true
   allow_failures:
+    - node_js: "6.4"
     - node_js: "6.3"
     - node_js: "6.2"
     - node_js: "6.1"

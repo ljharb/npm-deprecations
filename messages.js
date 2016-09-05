@@ -8,7 +8,7 @@ module.exports = function getDeprecationMessages(name, versions) {
 		return new Promise(function (resolve, reject) {
 			npm.load({ spin: false }, function (loadErr, npmI) {
 				if (loadErr) { return reject(loadErr); }
-				npmI.commands.view([name + '@' + version, 'deprecated'], true, function (err, data) {
+				return npmI.commands.view([name + '@' + version, 'deprecated'], true, function (err, data) {
 					if (err) { return reject(err); }
 					var versionData = data[version];
 					var msg;
@@ -20,7 +20,7 @@ module.exports = function getDeprecationMessages(name, versions) {
 					}
 					var finalData = {};
 					finalData[version] = finalMessage;
-					resolve(finalData);
+					return resolve(finalData);
 				});
 			});
 		});

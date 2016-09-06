@@ -1,3 +1,7 @@
+2.0.0 / 2016-09-06
+==================
+  * [Breaking] remove unused `versions` entry point
+
 1.0.7 / 2016-09-05
 ==================
   * [Refactor] only make one `npm info` call, instead of two

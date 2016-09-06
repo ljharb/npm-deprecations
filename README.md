@@ -8,9 +8,10 @@
 
 [![npm badge][npm-badge-png]][npm-url]
 
-Given an npm module name, get a map of npm version numbers to deprecation messages.
+Given npm module names, get a JSON map of npm version numbers to deprecation messages.
 
 ## Example
+
 ```js
 var deprecations = require('deprecations');
 var messages = deprecations('forms', 'object.assign');
@@ -45,6 +46,7 @@ Alternatively, install it as a global module, and then run:
 deprecations forms object.assign
 ```
 which will print out the same output, as valid JSON.
+
 ## Tests
 Simply clone the repo, `npm install`, and run `npm test`
 

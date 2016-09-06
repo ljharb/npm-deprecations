@@ -9,7 +9,6 @@ var promiseback = require('promiseback');
 var Promise = require('./promise');
 var assign = require('object.assign');
 
-var getVersions = require('./versions');
 var getDeprecationMessages = require('./messages');
 
 module.exports = function deprecations(packageName) {
@@ -28,9 +27,7 @@ module.exports = function deprecations(packageName) {
 	var deferred = promiseback(callback);
 	process.nextTick(function () {
 		var promises = modules.map(function (name) {
-			return getVersions(name).then(function (versions) {
-				return getDeprecationMessages(name, versions);
-			}).then(function (data) {
+			return getDeprecationMessages(name).then(function (data) {
 				var moduleData = {};
 				moduleData[name] = assign.apply(null, [{}].concat(data));
 				return moduleData;

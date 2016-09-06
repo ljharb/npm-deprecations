@@ -1,7 +1,6 @@
 'use strict';
 
 require('./messages');
-require('./versions');
 
 var deprecations = require('../');
 var test = require('tape');

@@ -1,30 +1,30 @@
 'use strict';
 
 var Promise = require('./promise');
-var npm = require('npm');
+var exec = require('child_process').exec;
 
 module.exports = function getDeprecationMessages(name, versions) {
 	var promises = versions.map(function (version) {
 		return new Promise(function (resolve, reject) {
-			npm.load({ spin: false }, function (loadErr, npmI) {
-				if (loadErr) { return reject(loadErr); }
-				return npmI.commands.view([name + '@' + version, 'deprecated'], true, function (err, data) {
-					if (err) { return reject(err); }
-					var versionData = data[version];
-					var msg;
-					if (versionData) { msg = versionData.deprecated; }
-					if (msg) { msg = msg.trim(); }
-					var finalMessage;
-					if (msg && msg.length > 0) {
-						finalMessage = msg;
-					}
-					var finalData = {};
-					finalData[version] = finalMessage;
-					return resolve(finalData);
-				});
+			exec('npm info ' + name + '@' + version + ' deprecated --json --no-spin --loglevel=info', function (err, jsonMsg) {
+				if (err) { return reject(err); }
+				return resolve(String(jsonMsg).trim());
 			});
+		}).then(function (jsonMsg) {
+			if (typeof jsonMsg !== 'undefined' && jsonMsg !== 'undefined') {
+				return JSON.parse(jsonMsg);
+			}
+			return null;
+		}).then(function (fullMsg) {
+			var msg = fullMsg ? String(fullMsg).trim() : '';
+			var finalMessage;
+			if (msg && msg.length > 0) {
+				finalMessage = msg;
+			}
+			var finalData = {};
+			finalData[version] = finalMessage;
+			return finalData;
 		});
 	});
 	return Promise.all(promises);
 };
-

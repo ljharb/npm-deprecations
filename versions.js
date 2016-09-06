@@ -1,22 +1,22 @@
 'use strict';
 
 var Promise = require('./promise');
-var npm = require('npm');
+var exec = require('child_process').exec;
 
 module.exports = function getVersions(module) {
 	return new Promise(function (resolve, reject) {
-		npm.load({ spin: false }, function (loadErr, npmI) {
-			if (loadErr) { throw loadErr; }
-			npmI.commands.view([module, 'versions'], true, function (err, info) {
-				if (err) { throw err; }
-				var keys = Object.keys(info);
-				if (keys.length === 1) {
-					resolve(info[keys[0]].versions);
-				} else {
-					reject('multiple keys: no idea what to do here');
-				}
-			});
+		exec('npm info ' + module + ' versions --json --loglevel=info --no-spin', function (err, versionsJSON) {
+			if (err) { return reject(err); }
+			return resolve(versionsJSON);
 		});
+	}).then(function (versionsJSON) {
+		return JSON.parse(versionsJSON);
+	}).then(function (versions) {
+		if (!Array.isArray(versions)) {
+			// eslint-disable-next-line global-require
+			throw new TypeError('got non-array: ' + require('util').inspect(versions));
+		}
+		return versions;
 	});
 };
 

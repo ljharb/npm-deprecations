@@ -49,7 +49,7 @@ test('works', function (t) {
 		deprecations('forms').then(function (messages) {
 			st.deepEqual(Object.keys(messages), ['forms'], 'has just one key');
 			st.deepEqual(compact(messages.forms), formMessages, 'forms messages match');
-		}).done();
+		}).then(null, st.fail);
 	});
 
 	t.test('with multiple modules', function (st) {
@@ -66,6 +66,6 @@ test('works', function (t) {
 				'0.4.0': 'Please update to the latest version',
 				'0.4.2': 'v0.4.3 doesn\'t modify function arguments, since it deoptimizes v8'
 			}, 'object.assign messages match');
-		}).done();
+		}).then(null, st.fail);
 	});
 });

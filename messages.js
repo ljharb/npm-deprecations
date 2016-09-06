@@ -1,6 +1,6 @@
 'use strict';
 
-var Promise = require('promiseback').Deferred.Promise;
+var Promise = require('./promise');
 var npm = require('npm');
 
 module.exports = function getDeprecationMessages(name, versions) {

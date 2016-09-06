@@ -6,7 +6,7 @@ var isString = function (str) { return toStr.call(str) === '[object String]'; };
 var isFunction = function (func) { return toStr.call(func) === '[object Function]'; };
 
 var promiseback = require('promiseback');
-var Promise = promiseback.Deferred.Promise;
+var Promise = require('./promise');
 var assign = require('object.assign');
 
 var getVersions = require('./versions');

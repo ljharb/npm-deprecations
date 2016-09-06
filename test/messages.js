@@ -3,7 +3,7 @@
 var test = require('tape');
 
 var getMessages = require('../messages');
-var Promise = require('promiseback').Deferred.Promise;
+var Promise = require('../promise');
 var versions = ['0.1.0', '0.2.0', '0.3.0'];
 
 var name = 'forms';

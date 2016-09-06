@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
+		"prepublish": "safe-publish-latest",
 		"pretest": "npm run --silent lint",
 		"test": "npm run --silent tests-only",
 		"tests-only": "node test",
@@ -42,7 +43,8 @@
 		"jscs": "^3.0.7",
 		"eslint": "^3.4.0",
 		"@ljharb/eslint-config": "^8.0.0",
-		"nsp": "^2.6.1"
+		"nsp": "^2.6.1",
+		"safe-publish-latest": "^1.0.1"
 	},
 	"engines": {
 		"node": ">= 0.4"

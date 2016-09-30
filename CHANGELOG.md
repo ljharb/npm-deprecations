@@ -1,3 +1,9 @@
+2.0.1 / 2016-09-30
+==================
+  * Revert "[Breaking] remove unused `versions` entry point"
+  * Revert "[Refactor] only make one `npm info` call, instead of two."
+  * [Tests] up to `node` `v6.7`, `v4.6`
+
 2.0.0 / 2016-09-06
 ==================
   * [Breaking] remove unused `versions` entry point

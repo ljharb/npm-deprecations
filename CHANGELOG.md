@@ -1,3 +1,7 @@
+1.0.8 / 2016-09-30
+==================
+  * Revert "[Refactor] only make one `npm info` call, instead of two."
+
 1.0.7 / 2016-09-05
 ==================
   * [Refactor] only make one `npm info` call, instead of two

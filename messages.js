@@ -8,7 +8,8 @@ module.exports = function getDeprecationMessages(name, versions) {
 		return new Promise(function (resolve, reject) {
 			exec('npm info ' + name + '@' + version + ' deprecated --json --no-spin --loglevel=info', function (err, jsonMsg) {
 				if (err) { return reject(err); }
-				return resolve(String(jsonMsg).trim());
+				var message = String(jsonMsg).trim();
+				return message ? resolve(message) : resolve();
 			});
 		}).then(function (jsonMsg) {
 			if (typeof jsonMsg !== 'undefined' && jsonMsg !== 'undefined') {

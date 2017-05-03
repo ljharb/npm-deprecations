@@ -41,7 +41,7 @@ module.exports = function deprecations(packageName) {
 				return assign(acc, moduleData);
 			}, {});
 			deferred.resolve(modulesData);
-		});
+		}, deferred.reject);
 	});
 	return deferred.promise;
 };

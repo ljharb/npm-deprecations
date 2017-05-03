@@ -41,7 +41,20 @@ test('works', function (t) {
 		'0.6.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
 		'0.7.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
 		'0.8.1': 'Please update to the latest version to ensure the latest security fixes in "qs"',
-		'0.9.0': 'Please update to the latest version to ensure the latest security fixes in "qs"'
+		'0.9.0': 'Please update to the latest version to ensure the latest security fixes in "qs"',
+		'0.9.1': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'0.9.2': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'0.9.3': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'0.9.4': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'0.9.5': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'0.9.6': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'0.10.0': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'1.0.0': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'1.1.0': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'1.1.1': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'1.1.3': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'1.1.4': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.',
+		'1.2.0': 'Please update to ^1.3.0 to ensure your HTML content is properly escaped.'
 	};
 
 	t.test('with one module', function (st) {

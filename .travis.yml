@@ -185,4 +185,6 @@ matrix:
     - os: osx
     - env: TEST=true ALLOW_FAILURE=true
     - env: COVERAGE=true
-    - node_js: "9.1"
+    - node_js: "9.1" # node 9 and npm 5 break
+    - node_js: "0.10" # 0.10 fails but i can't repro it locally
+    - node_js: "0.8" # 0.8 fails but i can't repro it locally

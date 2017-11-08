@@ -1,6 +1,6 @@
 {
 	"name": "deprecations",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"author": "Jordan Harband",
 	"description": "Given npm module names, get a JSON map of npm version numbers to deprecation messages.",
 	"license": "MIT",

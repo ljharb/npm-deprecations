@@ -1,3 +1,12 @@
+2.0.2 / 2017-11-08
+==================
+  * [Fix] reject the overarching promise when one of the promises fails
+  * [Fix] handle an existing but empty deprecation message
+  * [Deps] update `npm`
+  * [Dev Deps] update `tape`, `@ljharb/eslint-config`, `eslint`, `safe-publish-latest`, `nsp`
+  * [Tests] update `forms` deprecation messages
+  * [Tests] up to `node` `v9.1`, `v8.9`, `v7.10`, `v6.12`; use `nvm install-latest-npm`; pin included builds to LTS; add coverage but allow it to fail; improve matrix
+
 2.0.1 / 2016-09-30
 ==================
   * Revert "[Breaking] remove unused `versions` entry point"

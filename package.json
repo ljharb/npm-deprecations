@@ -38,13 +38,13 @@
 		"promiseback": "^2.0.2"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^11.0.0",
+		"@ljharb/eslint-config": "^12.2.1",
 		"covert": "^1.1.0",
-		"eslint": "^3.19.0",
+		"eslint": "^4.10.0",
 		"jscs": "^3.0.7",
-		"nsp": "^2.6.3",
+		"nsp": "^3.1.0",
 		"safe-publish-latest": "^1.1.1",
-		"tape": "^4.6.3"
+		"tape": "^4.8.0"
 	},
 	"engines": {
 		"node": ">= 0.4"

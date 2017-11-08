@@ -6,7 +6,7 @@ var exec = require('child_process').exec;
 module.exports = function getDeprecationMessages(name, versions) {
 	var promises = versions.map(function (version) {
 		return new Promise(function (resolve, reject) {
-			exec('npm info ' + name + '@' + version + ' deprecated --json --no-spin --loglevel=info', function (err, jsonMsg) {
+			exec('npm info ' + name + '@' + version + ' deprecated --json --no-spin --silent', function (err, jsonMsg) {
 				if (err) { return reject(err); }
 				var message = String(jsonMsg).trim();
 				return message ? resolve(message) : resolve();

@@ -5,7 +5,7 @@ var exec = require('child_process').exec;
 
 module.exports = function getVersions(module) {
 	return new Promise(function (resolve, reject) {
-		exec('npm info ' + module + ' versions --json --loglevel=info --no-spin', function (err, versionsJSON) {
+		exec('npm info ' + module + ' versions --json --silent --no-spin', function (err, versionsJSON) {
 			if (err) { return reject(err); }
 			return resolve(versionsJSON);
 		});

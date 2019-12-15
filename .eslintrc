@@ -9,5 +9,14 @@
 		"max-statements": [2, 14],
 		"max-statements-per-line": [2, { "max": 2 }],
 		"no-unused-vars": [1]
-	}
+	},
+
+	"overrides": [
+		{
+			"files": "test/**",
+			"rules": {
+				"max-lines-per-function": 0,
+			},
+		},
+	],
 }

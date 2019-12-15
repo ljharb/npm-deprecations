@@ -9,7 +9,7 @@ var test = require('tape');
 var compact = function (obj) {
 	return Object.keys(obj).reduce(function (map, key) {
 		if (obj[key]) {
-			map[key] = obj[key];
+			map[key] = obj[key]; // eslint-disable-line no-param-reassign
 		}
 		return map;
 	}, {});

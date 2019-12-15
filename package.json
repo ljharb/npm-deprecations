@@ -2,6 +2,9 @@
 	"name": "deprecations",
 	"version": "2.0.2",
 	"author": "Jordan Harband",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "Given npm module names, get a JSON map of npm version numbers to deprecation messages.",
 	"license": "MIT",
 	"main": "index.js",

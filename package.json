@@ -15,9 +15,7 @@
 		"tests-only": "node test",
 		"posttest": "npx aud",
 		"coverage": "covert test/*.js",
-		"lint": "npm run --silent jscs && npm run --silent eslint",
-		"eslint": "eslint *.js test/*.js",
-		"jscs": "jscs *.js test/*.js"
+		"lint": "eslint ."
 	},
 	"preferGlobal": true,
 	"bin": {
@@ -42,7 +40,6 @@
 		"@ljharb/eslint-config": "^12.2.1",
 		"covert": "^1.1.0",
 		"eslint": "^4.10.0",
-		"jscs": "^3.0.7",
 		"safe-publish-latest": "^1.1.1",
 		"tape": "^4.8.0"
 	},

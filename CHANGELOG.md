@@ -1,3 +1,13 @@
+2.0.3 / 2019-12-15
+==================
+  * [Deps] update `object.assign`
+  * [meta] add `funding` field; create FUNDING.yml
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `covert`, `safe-publish-latest`, `tape`
+  * [Tests] use shared travis-ci configs
+  * [Tests] remove `jscs`
+  * [Tests] use `npx aud` instead of `nsp` or `npm audit` with hoops
+  * [actions] add automatic rebasing / merge commit blocking
+
 2.0.2 / 2017-11-08
 ==================
   * [Fix] reject the overarching promise when one of the promises fails

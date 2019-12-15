@@ -13,12 +13,11 @@
 		"pretest": "npm run --silent lint",
 		"test": "npm run --silent tests-only",
 		"tests-only": "node test",
-		"posttest": "npm run --silent security",
+		"posttest": "npx aud",
 		"coverage": "covert test/*.js",
 		"lint": "npm run --silent jscs && npm run --silent eslint",
 		"eslint": "eslint *.js test/*.js",
-		"jscs": "jscs *.js test/*.js",
-		"security": "nsp check"
+		"jscs": "jscs *.js test/*.js"
 	},
 	"preferGlobal": true,
 	"bin": {
@@ -44,7 +43,6 @@
 		"covert": "^1.1.0",
 		"eslint": "^4.10.0",
 		"jscs": "^3.0.7",
-		"nsp": "^3.1.0",
 		"safe-publish-latest": "^1.1.1",
 		"tape": "^4.8.0"
 	},

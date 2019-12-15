@@ -3,7 +3,7 @@ language: node_js
 os:
  - linux
 import:
- - ljharb/travis-ci:node/all.yml
+ - ljharb/travis-ci:node/minors/gte_6.yml
  - ljharb/travis-ci:node/pretest.yml
  - ljharb/travis-ci:node/posttest.yml
  - ljharb/travis-ci:node/coverage.yml
@@ -11,7 +11,9 @@ matrix:
   allow_failures:
     - env: COVERAGE=true
     - env: POSTTEST=true
-    - node_js: "0.12" # 0.12 fails but i can't repro it locally
-    - node_js: "0.10" # 0.10 fails but i can't repro it locally
-    - node_js: "0.8" # 0.8 fails but i can't repro it locally
-
+  exclude:
+    - node_js: "9.2"
+    - node_js: "9.1"
+    - node_js: "9.0"
+    - node_js: "6.1"
+    - node_js: "6.0"

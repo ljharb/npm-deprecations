@@ -16,7 +16,7 @@ var compact = function (obj) {
 };
 
 test('errors', function (t) {
-	t['throws'](deprecations, new TypeError('at least 1 module name is required'));
+	t['throws'](deprecations, new TypeError('at least 1 package name is required'));
 	t['throws'](function () { deprecations(3); }, new TypeError('module names must all be strings'));
 	t['throws'](function () { deprecations('foo', 3); }, new TypeError('module names must all be strings'));
 	t['throws'](function () { deprecations(3, 'foo'); }, new TypeError('module names must all be strings'));

@@ -1,3 +1,9 @@
+3.0.0 / 2020-01-11
+==================
+  * [Breaking] update `npm` to `v6`
+  * [Breaking] add "exports" field to package.json
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape`
+
 2.0.3 / 2019-12-15
 ==================
   * [Deps] update `object.assign`

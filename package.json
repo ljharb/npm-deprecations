@@ -1,7 +1,7 @@
 {
 	"name": "deprecations",
-	"version": "2.0.3",
-	"author": "Jordan Harband",
+	"version": "3.0.0",
+	"author": "Jordan Harband <ljharb@gmail.com>",
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
 	},

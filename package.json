@@ -8,6 +8,16 @@
 	"description": "Given npm module names, get a JSON map of npm version numbers to deprecation messages.",
 	"license": "MIT",
 	"main": "index.js",
+	"exports": {
+		".": [
+			{
+				"default": "./index.js"
+			},
+			"./index.js"
+		],
+		"package": "./package.json",
+		"package.json": "./package.json"
+	},
 	"scripts": {
 		"prepublish": "safe-publish-latest",
 		"pretest": "npm run --silent lint",

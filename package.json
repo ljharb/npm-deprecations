@@ -44,7 +44,7 @@
 	"dependencies": {
 		"npm": "^6.13.6",
 		"object.assign": "^4.1.0",
-		"promiseback": "^2.0.2"
+		"promiseback": "^2.0.3"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^15.1.0",

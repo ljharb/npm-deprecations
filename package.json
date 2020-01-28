@@ -42,7 +42,7 @@
 		"deprecation messages"
 	],
 	"dependencies": {
-		"npm": "^6.13.6",
+		"npm": "^6.13.7",
 		"object.assign": "^4.1.0",
 		"promiseback": "^2.0.3"
 	},

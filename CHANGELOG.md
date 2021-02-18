@@ -1,3 +1,14 @@
+3.0.1 / 2021-02-18
+==================
+  * [readme] fix repo URLs; remove travis badge
+  * [meta] do not publish github action workflow files
+  * [Deps] update `npm`, `promiseback`, `object.assign`
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape`
+  * [actions] add "Allow Edits" workflow
+  * [actions] switch Automatic Rebase workflow to `pull_request_target` event
+  * [Tests] migrate tests to Github Actions
+  * [Tests] run `nyc` on all tests; use `tape` runner
+
 3.0.0 / 2020-01-11
 ==================
   * [Breaking] update `npm` to `v6`

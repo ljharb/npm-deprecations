@@ -47,9 +47,9 @@
 		"promiseback": "^2.0.3"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^17.5.1",
-		"aud": "^1.1.4",
-		"eslint": "^7.24.0",
+		"@ljharb/eslint-config": "^17.6.0",
+		"aud": "^1.1.5",
+		"eslint": "^7.28.0",
 		"nyc": "^14.1.1",
 		"safe-publish-latest": "^1.1.4",
 		"tape": "^5.2.2"

@@ -1,3 +1,17 @@
+3.0.2 / 2021-10-31
+==================
+  * [meta] allow npm 8
+  * [meta] allow npm 7
+  * [readme] add github actions/codecov badges
+  * [Deps] update `npm`
+  * [meta] gitignore coverage output
+  * [meta] remove unused nsprc file
+  * [meta] use `prepublishOnly` script for npm 7+
+  * [meta] ignore <= moderate audit warnings
+  * [actions] update codecov uploader
+  * [actions] use `node/install` instead of `node/run`; use `codecov` action
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `safe-publish-latest`, `tape`
+
 3.0.1 / 2021-02-18
 ==================
   * [readme] fix repo URLs; remove travis badge

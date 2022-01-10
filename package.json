@@ -24,8 +24,8 @@
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
 		"tests-only": "nyc tape 'test/**/*.js'",
-		"posttest": "npx aud --production",
-		"lint": "eslint --ext=.js,.mjs ."
+		"posttest": "aud --production",
+		"lint": "eslint --ext=js,mjs ."
 	},
 	"preferGlobal": true,
 	"bin": {
@@ -47,12 +47,13 @@
 		"promiseback": "^2.0.3"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^18.0.0",
+		"@ljharb/eslint-config": "^20.1.0",
 		"aud": "^1.1.5",
-		"eslint": "^7.32.0",
+		"eslint": "^8.6.0",
+		"in-publish": "^2.0.1",
 		"nyc": "^14.1.1",
-		"safe-publish-latest": "^1.1.5",
-		"tape": "^5.3.1"
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.4.0"
 	},
 	"engines": {
 		"npm": "^6.13.4 || ^7 || ^8",

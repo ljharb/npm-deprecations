@@ -1,3 +1,11 @@
+3.0.3 / 2022-06-24
+==================
+ - [Deps] remove explicit `npm` dep; rely on `engines` declaration
+ - [meta] use `npmignore` to autogenerate an npmignore file
+ - [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `safe-publish-latest`, `tape`
+ - [Dev Deps] pin `@babel/generator`/`@babel/traverse` to v7.17.9 due to https://github.com/jridgewell/gen-mapping/pull/4
+ - [actions] reuse common workflows
+
 3.0.2 / 2021-10-31
 ==================
   * [meta] allow npm 8

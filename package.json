@@ -43,7 +43,7 @@
 		"deprecation messages"
 	],
 	"dependencies": {
-		"object.assign": "^4.1.2",
+		"object.assign": "^4.1.4",
 		"promiseback": "^2.0.3"
 	},
 	"devDependencies": {

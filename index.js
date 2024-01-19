@@ -8,6 +8,8 @@ const isString = (str) => typeof str === 'string';
 const getVersions = require('./versions');
 const getDeprecationMessages = require('./messages');
 
+const { from } = Array;
+
 module.exports = function deprecations(packageName, ...morePackageNames) {
 	if (arguments.length < 1) {
 		throw new TypeError('at least 1 package name is required');
@@ -17,7 +19,7 @@ module.exports = function deprecations(packageName, ...morePackageNames) {
 		throw new TypeError('module names must all be strings');
 	}
 
-	return Promise.all(Array.from(arguments, async (name) => {
+	return Promise.all(from(arguments, async (name) => {
 		const versions = await getVersions(name);
 		return [
 			name,

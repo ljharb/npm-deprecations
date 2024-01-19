@@ -3,6 +3,9 @@
 const { exec } = require('child_process');
 const { inspect } = require('util');
 
+const { parse } = JSON;
+const { isArray } = Array;
+
 module.exports = async function getVersions(module) {
 	const versionsJSON = await new Promise((resolve, reject) => {
 		exec(`npm info ${module} versions --json --silent --no-spin`, (err, data) => {
@@ -12,8 +15,8 @@ module.exports = async function getVersions(module) {
 			return resolve(data);
 		});
 	});
-	const versions = JSON.parse(versionsJSON);
-	if (!Array.isArray(versions)) {
+	const versions = parse(versionsJSON);
+	if (!isArray(versions)) {
 		throw new TypeError(`got non-array: ${inspect(versions)}`);
 	}
 	return versions;

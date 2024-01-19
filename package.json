@@ -38,7 +38,8 @@
 	],
 	"dependencies": {
 		"array.prototype.every": "^1.1.5",
-		"object.fromentries": "^2.0.7"
+		"object.fromentries": "^2.0.7",
+		"string.prototype.trim": "^1.2.8"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.0",

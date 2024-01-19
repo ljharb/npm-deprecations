@@ -1,22 +1,21 @@
 'use strict';
 
-var Promise = require('./promise');
-var exec = require('child_process').exec;
+const { exec } = require('child_process');
+const { inspect } = require('util');
 
-module.exports = function getVersions(module) {
-	return new Promise(function (resolve, reject) {
-		exec('npm info ' + module + ' versions --json --silent --no-spin', function (err, versionsJSON) {
-			if (err) { return reject(err); }
-			return resolve(versionsJSON);
+module.exports = async function getVersions(module) {
+	const versionsJSON = await new Promise((resolve, reject) => {
+		exec(`npm info ${module} versions --json --silent --no-spin`, (err, data) => {
+			if (err) {
+				return reject(err);
+			}
+			return resolve(data);
 		});
-	}).then(function (versionsJSON) {
-		return JSON.parse(versionsJSON);
-	}).then(function (versions) {
-		if (!Array.isArray(versions)) {
-			// eslint-disable-next-line global-require
-			throw new TypeError('got non-array: ' + require('util').inspect(versions));
-		}
-		return versions;
 	});
+	const versions = JSON.parse(versionsJSON);
+	if (!Array.isArray(versions)) {
+		throw new TypeError(`got non-array: ${inspect(versions)}`);
+	}
+	return versions;
 };
 

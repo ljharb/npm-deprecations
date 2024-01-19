@@ -38,8 +38,8 @@
 		"deprecation messages"
 	],
 	"dependencies": {
-		"object.assign": "^4.1.4",
-		"promiseback": "^2.0.3"
+		"array.prototype.every": "^1.1.5",
+		"object.fromentries": "^2.0.7"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.0.0",
@@ -52,8 +52,8 @@
 		"tape": "^5.6.1"
 	},
 	"engines": {
-		"npm": "^6.13.4 || ^7 || ^8",
-		"node": "^6.2 || ^7 || ^8 || ^9.3 || ^10 || >= 11.2"
+		"npm": ">= 10",
+		"node": "^18.17.0 || >=20.5.0"
 	},
 	"publishConfig": {
 		"ignore": [

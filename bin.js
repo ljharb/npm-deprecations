@@ -2,14 +2,16 @@
 
 'use strict';
 
-var deprecations = require('./');
+const deprecations = require('./');
 
-var modules = process.argv.slice(2);
+const modules = process.argv.slice(2);
 
-/* eslint-disable no-console */
 if (modules.length > 0) {
-	deprecations.apply(null, modules).then(function (messages) {
+	deprecations(...modules).then((messages) => {
 		console.log(JSON.stringify(messages, null, '\t'));
+	}, (err) => {
+		process.exitCode = 1;
+		console.error(err);
 	});
 } else {
 	console.log('usage: deprecations module1 [module2...]\n\tOutputs JSON.');

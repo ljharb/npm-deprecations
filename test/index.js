@@ -1,8 +1,5 @@
 'use strict';
 
-require('./messages');
-require('./versions');
-
 const deprecations = require('../');
 const test = require('tape');
 

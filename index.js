@@ -2,11 +2,10 @@
 
 const every = require('array.prototype.every');
 const fromEntries = require('object.fromentries');
+const entries = require('object.entries');
+const pacote = require('pacote');
 
 const isString = (str) => typeof str === 'string';
-
-const getVersions = require('./versions');
-const getDeprecationMessages = require('./messages');
 
 const { from } = Array;
 
@@ -20,10 +19,13 @@ module.exports = function deprecations(packageName, ...morePackageNames) {
 	}
 
 	return Promise.all(from(arguments, async (name) => {
-		const versions = await getVersions(name);
+		const { versions } = await pacote.packument(name, { fullMetadata: true });
 		return [
 			name,
-			await getDeprecationMessages(name, versions),
+			fromEntries(entries(versions).map(([version, { deprecated }]) => [
+				version,
+				deprecated,
+			])),
 		];
 	})).then(fromEntries);
 };

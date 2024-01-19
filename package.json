@@ -9,12 +9,7 @@
 	"license": "MIT",
 	"main": "index.js",
 	"exports": {
-		".": [
-			{
-				"default": "./index.js"
-			},
-			"./index.js"
-		],
+		".": "./index.js",
 		"package": "./package.json",
 		"package.json": "./package.json"
 	},

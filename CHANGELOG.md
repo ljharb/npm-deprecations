@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v4.0.1](https://github.com/ljharb/npm-deprecations/compare/v4.0.0...v4.0.1) - 2024-01-27
+
+### Commits
+
+- [Refactor] use `util.parseArgs` [`f769e3c`](https://github.com/ljharb/npm-deprecations/commit/f769e3c31b01f9f05e577621aa4b9eb3e1970c0c)
+
 ## [v4.0.0](https://github.com/ljharb/npm-deprecations/compare/v3.0.3...v4.0.0) - 2024-01-27
 
 ### Commits

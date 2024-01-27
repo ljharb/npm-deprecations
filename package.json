@@ -52,7 +52,7 @@
 		"npmignore": "^0.3.1",
 		"nyc": "^15.1.0",
 		"safe-publish-latest": "^2.0.0",
-		"tape": "^5.7.3"
+		"tape": "^5.7.4"
 	},
 	"engines": {
 		"node": "^18.17.0 || >=20.5.0"

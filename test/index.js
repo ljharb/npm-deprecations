@@ -2,20 +2,20 @@
 
 const deprecations = require('../');
 const test = require('tape');
+const fromEntries = require('object.fromentries');
 
+/** @type {<T extends object>(obj: T) => Partial<T>} */
 const compact = function (obj) {
-	return Object.keys(obj).reduce((map, key) => {
-		if (obj[key]) {
-			map[key] = obj[key]; // eslint-disable-line no-param-reassign
-		}
-		return map;
-	}, {});
+	return fromEntries(Object.entries(obj).filter(([, value]) => value));
 };
 
 test('errors', (t) => {
 	t.throws(deprecations, new TypeError('at least 1 package name is required'));
+	// @ts-expect-error
 	t.throws(() => { deprecations(3); }, new TypeError('module names must all be strings'));
+	// @ts-expect-error
 	t.throws(() => { deprecations('foo', 3); }, new TypeError('module names must all be strings'));
+	// @ts-expect-error
 	t.throws(() => { deprecations(3, 'foo'); }, new TypeError('module names must all be strings'));
 	t.end();
 });

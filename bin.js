@@ -4,9 +4,14 @@
 
 const deprecations = require('./');
 
-const modules = process.argv.slice(2);
+const { positionals: modules, values: { help } } = require('util').parseArgs({
+	allowPositionals: true,
+	options: {
+		help: { type: 'boolean' },
+	},
+});
 
-if (modules.length > 0) {
+if (!help && modules.length > 0) {
 	deprecations(...modules).then((messages) => {
 		console.log(JSON.stringify(messages, null, '\t'));
 	}, (err) => {
@@ -15,5 +20,8 @@ if (modules.length > 0) {
 	});
 } else {
 	console.log('usage: deprecations module1 [module2...]\n\tOutputs JSON.');
+	if (!help || modules.length > 0) {
+		process.exitCode = 1;
+	}
 }
 

@@ -18,7 +18,6 @@ module.exports = function deprecations(packageName, ...morePackageNames) {
 		throw new TypeError('at least 1 package name is required');
 	}
 
-	// @ts-expect-error https://github.com/microsoft/TypeScript/issues/57164
 	if (!every(arguments, isString)) {
 		throw new TypeError('module names must all be strings');
 	}

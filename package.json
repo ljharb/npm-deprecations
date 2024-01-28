@@ -49,7 +49,7 @@
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.0",
-		"@types/array.prototype.every": "^1.1.0",
+		"@types/array.prototype.every": "^1.1.1",
 		"@types/object.entries": "^1.1.0",
 		"@types/object.fromentries": "^2.0.4",
 		"@types/pacote": "^11.1.8",
@@ -62,7 +62,7 @@
 		"nyc": "^15.1.0",
 		"safe-publish-latest": "^2.0.0",
 		"tape": "^5.7.4",
-		"typescript": "^5.4.0-dev.20240127"
+		"typescript": "next"
 	},
 	"engines": {
 		"node": "^18.17.0 || >=20.5.0"

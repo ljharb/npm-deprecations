@@ -10,7 +10,7 @@
 	"main": "index.js",
 	"exports": {
 		".": "./index.js",
-		"package.json": "./package.json"
+		"./package.json": "./package.json"
 	},
 	"sideEffects": false,
 	"scripts": {

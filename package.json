@@ -23,7 +23,8 @@
 		"test": "npm run tests-only",
 		"tests-only": "nyc tape 'test/**/*.js'",
 		"posttest": "aud --production",
-		"lint": "eslint --ext=js,mjs ."
+		"lint": "eslint --ext=js,mjs .",
+		"postlint": "tsc -p . && attw -P"
 	},
 	"preferGlobal": true,
 	"bin": {
@@ -47,6 +48,7 @@
 		"string.prototype.trim": "^1.2.8"
 	},
 	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.15.1",
 		"@ljharb/eslint-config": "^21.1.0",
 		"@types/array.prototype.every": "^1.1.1",
 		"@types/object.entries": "^1.1.1",

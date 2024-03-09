@@ -9,10 +9,3 @@ jobs:
       range: '^18.17.0 || >=20.5.0'
       type: minors
       command: npm run tests-only
-
-  node:
-    name: 'node'
-    needs: [tests]
-    runs-on: ubuntu-latest
-    steps:
-      - run: 'echo tests completed'

@@ -50,6 +50,7 @@
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.15.1",
 		"@ljharb/eslint-config": "^21.1.0",
+		"@ljharb/tsconfig": "^0.1.1",
 		"@types/array.prototype.every": "^1.1.1",
 		"@types/object.entries": "^1.1.1",
 		"@types/object.fromentries": "^2.0.4",

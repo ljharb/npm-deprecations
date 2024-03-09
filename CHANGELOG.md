@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v4.0.2](https://github.com/ljharb/npm-deprecations/compare/v4.0.1...v4.0.2) - 2024-03-09
+
+### Commits
+
+- [types] use shared config [`3152669`](https://github.com/ljharb/npm-deprecations/commit/3152669f5373d83bac48b683a94a8760451470e9)
+- [types] use a namespace [`9070549`](https://github.com/ljharb/npm-deprecations/commit/907054973125d1e0f80e3c737b85a19b05f9f418)
+- [actions] remove redundant finisher; use reusable workflow [`b75f00d`](https://github.com/ljharb/npm-deprecations/commit/b75f00dafe2bb4459827dec70c67e9dfccf2748f)
+- [Dev Deps] update `@types/array.prototype.every`, `typescript` [`173ee4d`](https://github.com/ljharb/npm-deprecations/commit/173ee4dfe168f93ffaf9d0f680d9218f6c148754)
+- [Tests] actually check types in CI [`19d8635`](https://github.com/ljharb/npm-deprecations/commit/19d86353ab38a54e6bffd8e46ea5e1aaf86e24f5)
+- [Dev Deps] update `@types/object.entries`, `tape` [`2f13cd1`](https://github.com/ljharb/npm-deprecations/commit/2f13cd180a63af04ef2f68367bb86344c7f3f0b1)
+- [meta] fix package.json entrypoint [`ffe5967`](https://github.com/ljharb/npm-deprecations/commit/ffe59672a7bb41361bb55ffa3864887834423636)
+
 ## [v4.0.1](https://github.com/ljharb/npm-deprecations/compare/v4.0.0...v4.0.1) - 2024-01-27
 
 ### Commits

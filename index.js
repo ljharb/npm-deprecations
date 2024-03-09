@@ -9,10 +9,9 @@ const isString = /** @type {(str: unknown) => str is string} */ (str) => typeof 
 
 const { from } = Array;
 
-/** @typedef {Awaited<ReturnType<import('./deprecations.d.ts')>>} DeprecationsByVersionByName */
-/** @typedef {DeprecationsByVersionByName[keyof DeprecationsByVersionByName]} DeprecationsByVersion */
+/** @typedef {import('.').DeprecationsByVersion} DeprecationsByVersion */
 
-/** @type {import('./deprecations.d.ts')} */
+/** @type {import('.')} */
 module.exports = function deprecations(packageName, ...morePackageNames) {
 	if (arguments.length < 1) {
 		throw new TypeError('at least 1 package name is required');
